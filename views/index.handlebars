@@ -45,7 +45,7 @@
 
 
 		{{#if grid}}
-		
+		{{#each projects.projects}}
 			<div class="row">
 			<div class="project col-md-4" id="{{projects.0.id}}">
 				<div class="thumbnail">
@@ -197,7 +197,7 @@
 				</div>
 			</div>
 			</div>
-
+			{{/each}}
 		{{else}}
 			{{#each projects.projects}}
 				<div class="project" id="{{id}}">
